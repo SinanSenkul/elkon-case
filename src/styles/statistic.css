@@ -1,0 +1,21 @@
+.statistic {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+.image {
+    width: 60px;
+    height: 60px;
+}
+
+.countup {
+    font-size: 40px;
+    color: white;
+}
+
+.stat_text{
+    color: white;
+}

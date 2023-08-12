@@ -1,0 +1,54 @@
+.refmap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+.refmap_buttoncontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 1em;
+    background-color: #F7F7F7;
+}
+
+.refmap_header {
+    color: black;
+}
+
+.map_frame {
+    width: 16px;
+    height: 16px;
+}
+
+.map_ship {
+    width: 25px;
+    height: 25px;
+}
+
+.closeicon {
+    width: 40px;
+    height: 40px;
+}
+
+.map {
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

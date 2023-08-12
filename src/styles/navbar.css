@@ -1,0 +1,55 @@
+.navbar {
+    display: flex;
+    position: absolute;
+    color: white;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    width: 210.112px;
+    height: 100px;
+    flex-shrink: 0;
+    margin-left: 90px;
+    margin-top: 40px;
+}
+
+.linkcontainer {
+    width: 900px;
+    margin-left: 231px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.tag {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+.select {
+    width: 45px;
+    height: 20px;
+    border-radius: 16px;
+    background: #009FE3;
+    color: white;
+}
+
+.searchbutton {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}
+
+.searchicon {
+    width: 100%;
+}

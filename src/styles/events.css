@@ -1,0 +1,25 @@
+.events {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 4em;
+}
+
+.events_carousel {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.events_header {
+    color: black;
+}
+
+.event_group{
+    display: flex;
+    flex-direction: column;
+}

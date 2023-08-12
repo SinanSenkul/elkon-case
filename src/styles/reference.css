@@ -1,0 +1,33 @@
+.reference {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ref_image {
+    width: 400px;
+    height: 200px;
+    border-radius: 1em;
+}
+
+.ref_name {
+    
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+.ref_button {
+    border-radius: 3em;
+    height: 2em;
+    font-size: 1em;
+    border: none;
+    background-color: #009FE3;
+    color: white;
+    opacity: 0;
+}
+
+.reference:hover .ref_button{
+    opacity: 1;
+}

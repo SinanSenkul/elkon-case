@@ -1,0 +1,11 @@
+@import 'node_modules/react-modal-video/scss/modal-video.scss';
+
+.video_cover {
+    height: 400px;
+    width: 600px;
+    border-radius: 2em;
+}
+
+.video_cover:hover{
+    cursor: pointer;
+}
