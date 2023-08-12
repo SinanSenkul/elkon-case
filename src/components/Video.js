@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import YouTube from 'react-youtube';
 import '../styles/video.scss';
 import ModalVideo from "react-modal-video";
-import { ReactDOM } from "react";
 import video_cover from '../video_cover.jpg'
 
 export default function Video() {

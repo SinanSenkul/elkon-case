@@ -10,7 +10,7 @@ import Events from "./Events";
 import Profile from "./Profile";
 import RefMap from "./RefMap";
 
-export default function HeroContainer() {
+export default function MainContainer() {
     var heros = [
         {
             header1: 'Powering',

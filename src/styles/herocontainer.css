@@ -1,11 +1,7 @@
 .herocontainer{
     display: flex;
-    /* height: 800px; */
     width:100%; 
     flex-direction: column;
-    /* background-image: url("../herocover.jpg"); */
-/*     background-repeat:no-repeat;
-    background-size: 1710px 800px; */
     color: white;
 }
 
@@ -15,7 +11,4 @@
     height: 100%;
     box-sizing: border-box;
     background-color: #009FE3;
-    /* background-image: url("../herocover.jpg");
-    background-repeat:no-repeat;
-    background-size: 1710px 1000px; */
 }
