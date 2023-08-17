@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
     display: flex;
     position: absolute;
     color: white;
@@ -41,6 +41,14 @@
     color: white;
 }
 
+#navbar{
+    box-sizing: border-box;
+    display: flex;
+    width: 90%;
+    position: static;
+    z-index: 1;
+}
+
 .searchbutton {
     width: 20px;
     height: 20px;
@@ -53,3 +61,104 @@
 .searchicon {
     width: 100%;
 }
+
+#logocontainer {
+    width: 120px;
+    height: 56.86px;
+} */
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    position: absolute;
+    top: 2rem;
+    color: white;
+}
+
+#logocontainer {
+    min-width: 5em;
+    min-height: 2.5em;
+    width: 10em;
+    height: 5em;
+    flex-shrink: 0;
+}
+
+#logo {
+    width: 100%;
+    height: 100%;
+}
+
+#linkcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 70rem;
+    text-align: right;
+    font-size: 23px;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 700;
+    font-family: Aeonik TRIAL;
+}
+
+.tag {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#selectcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    background-color: #009FE3;
+    border-radius: 1.6rem;
+}
+
+#select {
+    width: 60px;
+    height: 30px;
+    border-radius: 16px;
+    background: #009FE3;
+    color: white;
+    font-size: 16px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+#select:focus{
+    outline: none;
+}
+
+#select:hover{
+    opacity: 1;
+}
+
+.option{
+    border-radius: 1.6rem;
+    background-color: white;
+    color: black;
+    opacity: 0.5;
+}
+
+#searchbutton {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    opacity: 0.75;
+}
+
+#searchbutton:hover{
+    opacity: 1;
+}
+  

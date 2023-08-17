@@ -1,3 +1,12 @@
+/* #herocontainer {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 0;
+    padding-top: 12em;
+    padding-left: 9em;
+    padding-bottom: 0.5em;
+}
 
 .header1 {
     font-size: 45px;
@@ -49,11 +58,156 @@ button {
 }
 
 .bgimage {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    z-index: 0;
     position: absolute;
-    width: 1710px;
-    height: 800px;
+    top: -60px;
+    left: 0px;
+    height: 100vh;
+}
+
+#herocover {
+    z-index: -1;
+    position: absolute;
+    top: -60px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
 }
 
 .watch_video {
     color: white;
+} */
+
+#herocontainer {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-top: 8rem;
+    margin-left: -18rem;
+    color: white;
+}
+
+#herocover {
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+#infocontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 800px;
+}
+
+#header1 {
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: -1em;
+}
+
+#header2 {
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 300;
+    margin-bottom: -2rem;
+}
+
+#textcontainer {
+    width: 683px;
+}
+
+#text {
+    font-size: 24px;
+    font-family: Aeonik TRIAL;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    display: flex;
+}
+
+#buttoncontainer {
+    width: 25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0;
+}
+
+#readmorebutton {
+    background-color: #009FE3;
+    color: white;
+    width: 12rem;
+    height: 3rem;
+    flex-shrink: 0;
+    border-radius: 1.5rem;
+    font-size: 20px;
+    font-family: Aeonik TRIAL;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+#readmorebutton:focus {
+    outline: none;
+}
+
+#readmorebutton:hover{
+    opacity: 1;
+}
+
+#watchvideocontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 11rem;
+}
+
+#playbutton {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+#playbutton:focus {
+    outline: none;
+}
+
+#playbutton:hover{
+    opacity: 1;
+}
+
+#watchvideotext {
+    color: white;
+    font-size: 20px;
+    font-family: Aeonik TRIAL;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }

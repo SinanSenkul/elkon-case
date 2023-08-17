@@ -5,7 +5,8 @@
     align-items: center;
     text-align: center;
     width: 100%;
-    margin-top: 5em;
+    position: static;
+    /* margin-top: 5em; */
 }
 
 .ref_carousel {

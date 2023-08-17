@@ -1,0 +1,47 @@
+#heroscontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#indicatorcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 10rem;
+    position: absolute;
+    bottom: -8rem;
+    left: 45%;
+}
+
+#slidebuttoncontainer {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 20rem;
+    width: 100%;
+    justify-content: space-between;
+    opacity: 0;
+}
+
+#heroscontainer:hover #slidebuttoncontainer {
+    opacity: 1;
+}
+
+.slidebutton {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.slidebutton:focus {
+    outline: none;
+}
+
+.slidebutton:hover{
+    opacity: 1;
+}

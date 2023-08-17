@@ -1,0 +1,38 @@
+/* #maincontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%; 
+    color: white;
+    position: static;
+}
+
+#carouselcontainer{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: static;
+    margin-top: -60px;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    z-index: 0;
+    padding: 0;
+    background-color: #009FE3;
+}
+
+#carousel{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+} */
+
+#maincontainer{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}

@@ -4,24 +4,6 @@ import '../styles/references.css';
 import Carousel from "react-grid-carousel";
 
 export default function References() {
-    const ref_data = [
-        {
-            ref_name: 'Frigates',
-            ref_image: require('../ref_tcg.jpg')
-        },
-        {
-            ref_name: 'Carriers',
-            ref_image: require('../ref_phoenix.jpg')
-        },
-        {
-            ref_name: 'Fishing Vessels',
-            ref_image: require('../ref_delicay.jpg')
-        },
-        {
-            ref_name: 'Yachts',
-            ref_image: require('../ref_adl.jpg')
-        },
-    ]
     return (
         <div className="references">
             <h1 className="ref_header">References</h1>
