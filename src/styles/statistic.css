@@ -1,4 +1,4 @@
-.statistic {
+#statisticcontainer {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -6,16 +6,47 @@
     color: white;
 }
 
-.image {
+#statisticimage {
     width: 60px;
     height: 60px;
+    flex-shrink: 0;
+    margin-bottom: 1.5rem;
+}
+
+#countercontainer {
+    width: 262px;
+    height: 90px;
+    flex-shrink: 0;
+    border-radius: 45px;
+    background: #FFF;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
 }
 
 .countup {
-    font-size: 40px;
-    color: white;
+    font-family: Aeonik TRIAL;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #009FE3;
 }
 
-.stat_text{
-    color: white;
+#plus {
+    font-family: Aeonik TRIAL;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #009FE3;
+}
+
+#statistictext {
+    color: #009FE3;
+    font-size: 18px;
+    font-family: Aeonik TRIAL;
 }

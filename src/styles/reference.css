@@ -1,33 +1,112 @@
-.reference {
+#referencecontainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    width: 450px;
+    height: 400px;
+    background-color: #F7F7F7;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.10);
 }
 
-.ref_image {
-    width: 400px;
-    height: 200px;
-    border-radius: 1em;
+#reference_image_container {
+    width: 450px;
+    height: 270px;
+    overflow: hidden;
 }
 
-.ref_name {
-    
-    font-size: 30px;
-    font-weight: bold;
-    color: black;
+#reference_image {
+    max-width: 100%;
+    transition: all 1s;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
 }
 
-.ref_button {
-    border-radius: 3em;
-    height: 2em;
-    font-size: 1em;
-    border: none;
+#reference_image_container:hover #reference_image {
+    transform: scale(1.3);
+}
+
+#reference_detail_container {
+    width: 450px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.reference_name {
+    font-family: Aeonik TRIAL;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: -1rem;
+}
+
+.reference_type {
+    color: #999;
+    text-align: center;
+    font-family: Aeonik TRIAL;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#reference_button_container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#referencebutton {
     background-color: #009FE3;
     color: white;
-    opacity: 0;
+    width: 12rem;
+    height: 3rem;
+    flex-shrink: 0;
+    border-radius: 1.5rem;
+    font-size: 20px;
+    font-family: Aeonik TRIAL;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    margin-top: 2rem;
+    opacity: 0.75;
+    /* animation: fadeIn 2s; */
+    animation: riseUp 1s;
 }
 
-.reference:hover .ref_button{
+#referencebutton:hover {
     opacity: 1;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes riseUp {
+    0% {
+        margin-top: 10rem;
+    }
+
+    100% {
+        margin-top: 2rem;
+    }
 }

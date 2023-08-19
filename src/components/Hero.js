@@ -34,7 +34,7 @@ export default function Hero(props) {
                 <p id="header1">{data[activeSlide].header1}</p>
                 <p id="header2">{data[activeSlide].header2}</p>
                 <div id="textcontainer">
-                    <p id="text">{data[activeSlide].text}</p>
+                    <p id="text" className="text">{data[activeSlide].text}</p>
                 </div>
             </div>
             <div id="buttoncontainer">

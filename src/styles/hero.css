@@ -97,7 +97,11 @@ button {
     left: 0px;
     width: 100%;
     height: 100vh;
-    position: absolute;
+    animation: fadeIn 2s;
+    
+    /* -webkit-animation: appear 1s;
+    animation: appear 1s; */
+
 }
 
 #infocontainer {
@@ -125,7 +129,7 @@ button {
     width: 683px;
 }
 
-#text {
+.text {
     font-size: 24px;
     font-family: Aeonik TRIAL;
     font-style: normal;
@@ -170,7 +174,7 @@ button {
     outline: none;
 }
 
-#readmorebutton:hover{
+#readmorebutton:hover {
     opacity: 1;
 }
 
@@ -199,7 +203,7 @@ button {
     outline: none;
 }
 
-#playbutton:hover{
+#playbutton:hover {
     opacity: 1;
 }
 
@@ -210,4 +214,24 @@ button {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-left {
+    from {
+        margin-left: 0%;
+    }
+    to {
+        margin-left: -100%;
+        display: none;
+    }
 }

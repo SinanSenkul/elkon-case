@@ -1,0 +1,40 @@
+#hdr_container {
+    width: 250px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#hdr1 {
+    color: #000;
+    font-family: Aeonik TRIAL;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 2rem;
+    z-index: 1;
+}
+
+#hdr2 {
+    font-family: Aeonik TRIAL;
+    font-size: 73px;
+    font-style: normal;
+    /* font-weight: 700; */
+    line-height: normal;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #e8e8e8;
+    margin-top: -5rem;
+    z-index: -1000;
+}
+
+#line{
+    width: 60px;
+    height: 2px;
+    flex-shrink: 0;
+    background-color: #009FE3;
+    margin-top: -3rem;
+}

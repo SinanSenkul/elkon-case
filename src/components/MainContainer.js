@@ -18,9 +18,10 @@ export default function MainContainer() {
             <Navbar />
             <Heros />
             <Statistics />
-            {/* <Statistics />
             <References />
             <Events />
+            {/*
+            
             <Profile />
             <News />
             <RefMap /> */}

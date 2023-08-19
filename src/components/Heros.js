@@ -6,6 +6,7 @@ import buttonleft from '../buttonleft.png';
 
 export default function Heros() {
     var [activeSlide, setActiveSlide] = useState(0);
+
     function rightSlide() {
         if (activeSlide < 2) {
             setActiveSlide(activeSlide + 1);
@@ -14,6 +15,7 @@ export default function Heros() {
             setActiveSlide(0);
         }
     }
+
     function leftSlide() {
         if (activeSlide === 0) {
             setActiveSlide(2);
@@ -22,11 +24,12 @@ export default function Heros() {
             setActiveSlide(activeSlide - 1);
         }
     }
+
     return (
         <div id="heroscontainer" >
             <Hero activeSlide={activeSlide} />
             <div id="slidebuttoncontainer">
-                <img src={buttonleft} alt="buttonleft" className="slidebutton" onClick={rightSlide}></img>
+                <img src={buttonleft} alt="buttonleft" className="slidebutton" onClick={leftSlide}></img>
                 <img src={buttonright} alt="buttonright" className="slidebutton" onClick={rightSlide}></img>
             </div>
             <div id="indicatorcontainer">
