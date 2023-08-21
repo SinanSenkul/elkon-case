@@ -4,19 +4,19 @@ import '../styles/newscard.css';
 export default function NewsCard(props) {
     const { header, date, info } = props;
     return (
-        <div className="newscard">
-            <h3 className="newscard_header">
+        <div id="newscard_container">
+            <p id="newscard_header">
                 {header}
-            </h3>
-            <p className="newscard_date">
+            </p>
+            <p id="newscard_date">
                 {date}
             </p>
-            <div className="info_holder">
-                <p className="newscard_info">
+            <div id="newscard_info_container">
+                <p id="newscard_info">
                     {info}
                 </p>
             </div>
-            <button className="news_readmore">
+            <button id="newscard_readmore">
                 read more
             </button>
         </div>

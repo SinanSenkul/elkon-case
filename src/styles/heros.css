@@ -27,6 +27,7 @@
     width: 100%;
     justify-content: space-between;
     opacity: 0;
+    transition: all 0.5s ease-out;
 }
 
 #heroscontainer:hover #slidebuttoncontainer {
@@ -36,6 +37,7 @@
 .slidebutton {
     cursor: pointer;
     opacity: 0.75;
+    transition: all 0.5s ease-out;
 }
 
 .slidebutton:focus {

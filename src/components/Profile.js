@@ -1,15 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import Video from './Video.js';
 import '../styles/profile.css';
 import playicon from '../playicon.png';
+import Header from './Header.js';
+import arrow from '../arrow.png';
 
 export default function Profile() {
+    var [isOpen, setOpen] = useState(false);
+
+    function setModalOpen() {
+        setOpen(true);
+    }
+
+    function setModalClose() {
+        setOpen(false);
+    }
+
     return (
-        <div className="profile">
-            <h1 className="profile_header">Company Profile</h1>
-            <div className="profile_container">
-                <div className="profile_info">
-                    <p className="profile_p">
+        <div id="profile_container">
+            <div id="profile_header_container">
+                <Header header={'About Us'} />
+            </div>
+            <div id="profile_info_container">
+                <div id="profile_text_container">
+                    <p id="profile_text">
                         elkon was established in 1980 to design, manufacture,
                         integrate and commission low-voltage electrical equipment
                         and automation systems for the maritime industry. elkon is
@@ -20,15 +34,22 @@ export default function Profile() {
                         which means emission reduction and the greenhouse effect,
                         as the company's vision.
                     </p>
-                    <button className="profile_readmore">read more</button>
+                    <button id="profile_readmore_button">
+                        <img src={arrow} alt="playicon"></img>
+                        read more
+                    </button>
                 </div>
-                <div className="profile_video">
-                    <Video />
-                    <div className="profile_buttoncontainer">
-                        <button className="profile_playbutton">
+                <div id="profile_video_container">
+                    <Video
+                        isOpen = {isOpen}
+                        setModalOpen={setModalOpen}
+                        setModalClose={setModalClose}
+                    />
+                    <div id="profile_button_container">
+                        <button id="profile_playbutton" onClick={() => setOpen(true)}>
                             <img src={playicon} alt="playicon"></img>
                         </button>
-                        <span className="profile_watchvideo">watch video</span>
+                        <span id="profile_watchvideo">elkon promotional film</span>
                     </div>
                 </div>
             </div>

@@ -18,16 +18,16 @@ export default function References() {
             <div id="reference_carousel_container">
                 <Carousel
                     id="reference_carousel"
-                    cols={4}
+                    cols={3}
                     rows={1}
-                    gap={30}
+                    gap={10}
                     loop
-                    arrowLeft={() => {
+                    /* arrowLeft={() => {
                         return <img src={buttonleft} alt="buttonleft" id="references_left_arrow"></img>
                     }}
                     arrowRight={() => {
                         return <img src={buttonright} alt="buttonright" id="references_right_arrow"></img>
-                    }}
+                    }} */
                 >
                     <Carousel.Item>
                         <Reference

@@ -19,8 +19,8 @@ export default function Events() {
                     rows={2}
                     gap={10}
                     loop
-                    arrowLeft={() => { return <img src={buttonleft} alt="buttonleft" id="events_left_arrow"></img> }}
-                    arrowRight={() => { return <img src={buttonright} alt="buttonright" id="events_right_arrow"></img> }}
+                    /* arrowLeft={() => { return <img src={buttonleft} alt="buttonleft" id="events_left_arrow"></img> }}
+                    arrowRight={() => { return <img src={buttonright} alt="buttonright" id="events_right_arrow"></img> }} */
                 >
                     <Carousel.Item>
                         <Event
@@ -73,7 +73,7 @@ export default function Events() {
                     <Carousel.Item>
                         <Event
                             key={7}
-                            event_name={'EHM'}
+                            event_name={'Electric Hybrid Marine'}
                             event_image={require('../event_ehm.jpg')}
                             event_date={'01.01.2024'}
                         />
