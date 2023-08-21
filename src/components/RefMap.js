@@ -5,6 +5,11 @@ import '../styles/refmap.css';
 import closeicon from '../closeicon.png';
 import Header from './Header.js';
 import refmap_dialogbox from '../refmap_dialogbox.png';
+import elkonlogo_white from '../elkonlogo_white.png';
+import refmap_call from '../refmap_call.png';
+import refmap_fax from '../refmap_fax.png';
+import refmap_email from '../refmap_email.png';
+import refmap_somed from '../refmap_somed.png';
 
 export default function RefMap() {
     var [mapOn, setMapOn] = useState(false);
@@ -30,9 +35,48 @@ export default function RefMap() {
                         }
                     </button>
                     <img src={refmap_dialogbox} alt="refmap_dialogbox" id="refmap_dialogbox"></img>
-                    <span id="refmap_openmap">Open Map</span>
+                    <span id="refmap_openmap">
+                        {!mapOn && 'Open Map'}
+                        {mapOn && 'Close Map'}
+                    </span>
                 </div>
                 <div id="refmap_top" className={mapOn ? "refmap_top_mapOn" : "refmap_top_mapOff"}>
+                    <div id="refmap_tag_container" className={mapOn ? "refmap_tag_container_mapOn" : "refmap_tag_container_mapOff"}>
+                        <a href="#" className="refmap_top_tag">Corporate</a>
+                        <a href="#" className="refmap_top_tag">Products</a>
+                        <a href="#" className="refmap_top_tag">References</a>
+                        <a href="#" className="refmap_top_tag">Media</a>
+                        <a href="#" className="refmap_top_tag">Human Resources</a>
+                        <a href="#" className="refmap_top_tag">Contact</a>
+                    </div>
+                    <div id="refmap_contactinfo_container" className={mapOn ? "refmap_contactinfo_container_mapOn" : "refmap_contactinfo_container_mapOff"}>
+                        <img src={elkonlogo_white} alt="elkonlogo" id="refmap_logo"></img>
+                        <span className="refmap_span">
+                            <img src={refmap_call} alt="refmap_call"></img>
+                            <p className="refmap_contactinfo">+90 216 395 66 95</p>
+                        </span>
+                        <span className="refmap_span">
+                            <img src={refmap_fax} alt="refmap_fax"></img>
+                            <p className="refmap_contactinfo">+90 216 446 23 30</p>
+                        </span>
+                        <span className="refmap_span">
+                            <img src={refmap_email} alt="refmap_email"></img>
+                            <p className="refmap_contactinfo">info@elkon-tr.com</p>
+                        </span>
+                    </div>
+                    <div id="refmap_footer" className={mapOn ? "refmap_footer_mapOn" : "refmap_footer_mapOff"}>
+                        <span className="refmap_span">
+                            <p className="refmap_reserved_text">2022 elkon All rights reserved.</p>
+                        </span>
+                        <span className="refmap_policy_span">
+                            <a href="#" className="refmap_footer_tag">Cookie Policy</a>
+                            <a href="#" className="refmap_footer_tag">Privacy Policy</a>
+                            <a href="#" className="refmap_footer_tag">Application Text</a>
+                        </span>
+                        <span className="refmap_span">
+                            <img src={refmap_somed} alt="refmap_somed"></img>
+                        </span>
+                    </div>
                 </div>
                 <div id="refmap_map_container" className={mapOn ? "refmap_mapOn" : "refmap_mapOff"}>
                     <iframe
