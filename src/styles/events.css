@@ -1,8 +1,5 @@
 #events_container {
     display: inline-block;
-    /* flex-direction: column;
-    justify-content: center;
-    align-items: center; */
     align-items: center;
     text-align: center;
     width: 100%;

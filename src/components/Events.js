@@ -3,8 +3,6 @@ import Carousel from "react-grid-carousel";
 import Event from "./Event";
 import '../styles/events.css';
 import Header from './Header.js';
-import buttonleft from '../buttonleft.png';
-import buttonright from '../buttonright.png';
 
 export default function Events() {
     return (
@@ -19,8 +17,6 @@ export default function Events() {
                     rows={2}
                     gap={10}
                     loop
-                    /* arrowLeft={() => { return <img src={buttonleft} alt="buttonleft" id="events_left_arrow"></img> }}
-                    arrowRight={() => { return <img src={buttonright} alt="buttonright" id="events_right_arrow"></img> }} */
                 >
                     <Carousel.Item>
                         <Event

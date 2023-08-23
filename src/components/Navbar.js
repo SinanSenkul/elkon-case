@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import elkonlogo from '../elkonlogo.png';
 import '../styles/navbar.css';
 import searchicon from '../searchicon.png';

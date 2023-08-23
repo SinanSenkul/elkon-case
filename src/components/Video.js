@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import '../styles/video.scss';
 import ModalVideo from "react-modal-video";
 import video_cover from '../video_cover.jpg'

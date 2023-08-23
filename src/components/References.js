@@ -9,9 +9,6 @@ import buttonright from '../buttonright.png';
 export default function References() {
     return (
         <div id="references">
-            {/* <div id="reference_header_container">
-                <h1 id="referenceheader">References</h1>
-            </div> */}
             <div id="reference_header_container">
                 <Header header={'References'} />
             </div>
@@ -22,12 +19,6 @@ export default function References() {
                     rows={1}
                     gap={10}
                     loop
-                    /* arrowLeft={() => {
-                        return <img src={buttonleft} alt="buttonleft" id="references_left_arrow"></img>
-                    }}
-                    arrowRight={() => {
-                        return <img src={buttonright} alt="buttonright" id="references_right_arrow"></img>
-                    }} */
                 >
                     <Carousel.Item>
                         <Reference

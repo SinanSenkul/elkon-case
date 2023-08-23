@@ -14,7 +14,7 @@ export default function Statistic(props) {
         <div id="statisticcontainer">
             <img src={image} alt="img" id="statisticimage"></img>
             <div>
-                <ScrollTrigger onEnter={() => setCounterOn(true)} /* onExit={() => setCounterOn(false)} */>
+                <ScrollTrigger onEnter={() => setCounterOn(true)} >
                     {counterOn &&
                         <div id="countercontainer">
                             <div>
