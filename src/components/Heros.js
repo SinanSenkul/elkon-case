@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Hero from "./Hero";
 import '../styles/heros.css';
-import buttonright from '../buttonright.png';
-import buttonleft from '../buttonleft.png';
 
 export default function Heros() {
     var [activeSlide, setActiveSlide] = useState(0);
@@ -19,15 +17,6 @@ export default function Heros() {
         }, 8000)
     }
 
-    function leftSlide() {
-        if (activeSlide === 0) {
-            setActiveSlide(2);
-        }
-        else {
-            setActiveSlide(activeSlide - 1);
-        }
-    }
-
     function handleClick(val) {
         clearTimeout(timeOut);
         setActiveSlide(val);
@@ -41,10 +30,6 @@ export default function Heros() {
     return (
         <div id="heroscontainer" >
             <Hero activeSlide={activeSlide} />
-            {/* <div id="slidebuttoncontainer">
-                <img src={buttonleft} alt="buttonleft" className="slidebutton" onClick={leftSlide}></img>
-                <img src={buttonright} alt="buttonright" className="slidebutton" onClick={rightSlide}></img>
-            </div> */}
             <div id="indicatorcontainer">
                 {
                     (activeSlide === 0) &&
